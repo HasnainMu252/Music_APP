@@ -9,6 +9,7 @@ import android.view.ViewGroup
 import android.widget.ImageButton
 import android.widget.ImageView
 import android.widget.TextView
+import android.widget.Toast
 import androidx.appcompat.view.menu.MenuView.ItemView
 import androidx.core.net.toUri
 import androidx.recyclerview.widget.RecyclerView
@@ -59,6 +60,7 @@ class MyAdapter (val context: Context, val dataList: List<Data>): RecyclerView.A
 //        populate the data into View
 
         holder.play.setOnClickListener(){
+            print("Music Play")
             mediaPlayer.start()
 
         }
